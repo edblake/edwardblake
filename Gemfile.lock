@@ -38,6 +38,7 @@ GEM
       xml-simple
     babosa (0.2.0)
     builder (2.1.2)
+    configuration (1.2.0)
     dragonfly (0.8.1)
       rack
     erubis (2.6.6)
@@ -45,7 +46,15 @@ GEM
     filters_spam (0.3)
     friendly_id (3.1.8)
       babosa (~> 0.2.0)
+    heroku (1.14.8)
+      json_pure (>= 1.2.0, < 1.5.0)
+      launchy (~> 0.3.2)
+      rest-client (>= 1.4.0, < 1.7.0)
     i18n (0.5.0)
+    json_pure (1.4.6)
+    launchy (0.3.7)
+      configuration (>= 0.0.5)
+      rake (>= 0.8.1)
     mail (2.2.12)
       activesupport (>= 2.3.6)
       i18n (>= 0.4.0)
@@ -95,6 +104,8 @@ GEM
       routing-filter (~> 0.1.6)
     refinerycms-inquiries (0.9.9.7)
       filters_spam (~> 0.2)
+    rest-client (1.6.1)
+      mime-types (>= 1.16)
     routing-filter (0.1.7)
       actionpack
     thor (0.14.6)
@@ -110,6 +121,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-s3
+  heroku
   mysql2
   rails (= 3.0.3)
   refinerycms (~> 0.9.8.6)

@@ -1,0 +1,18 @@
+login: &login
+  access_key_id: <%= ENV['S3_KEY'] %>
+  secret_access_key: <%= ENV['S3_SECRET'] %>
+
+development:
+  bucket_name: edblakenet_dev
+  <<: *login
+  distribution_domain: s3.amazonaws.com/edblakenet_dev
+
+test:
+  bucket_name: edblakenet_test
+  <<: *login
+  distribution_domain: s3.amazonaws.com/edblakenet_test
+
+production:
+  bucket_name: edblakenet_production
+  <<: *login
+  distribution_domain: s3.amazonaws.com/edblakenet_production
